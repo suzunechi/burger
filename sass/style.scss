@@ -1,0 +1,204 @@
+$main-color: #FBB731;;
+
+* {
+    font-family: 'Nunito Sans';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo {
+    height: 862px;
+    padding: 120px 0 50px 0;
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+    position: relative;
+    &_work {
+        color: $main-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    &_title {
+        margin-top: 10px;
+        font-weight: 800;
+        font-size: 120px;
+        color: #FAF9F9;
+        text-transform: uppercase;
+        line-height: 130px;
+    }
+    &_descr {
+        color: #DEDEDE;
+        font-family: 'Lato' sans-serif;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 140%;
+        margin-top: 43px;
+    }
+    &_btn {
+        border: none;
+        cursor: pointer;
+        background-color: $main-color;
+        width: 170px;
+        height: 58px;
+        border-radius: 5px;
+        margin-top: 42px;
+        color: #1E2F40;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &_line {
+        position: absolute;
+        top: 0;
+        right: 370px;
+        width: 432px;
+        height: 862px;
+        background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+        z-index: 1;
+    }
+    &_img {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+        position: relative;
+        width: 829px;
+        height: 861px;
+        z-index: 2;
+    }
+}
+
+.second {
+    height: 766px;
+    padding: 186px 0 185px 0;
+    &_block {
+        width: 580px;
+        height: 395px;
+    }
+    &_discount {
+        padding: 116px 0 116px 50px;
+        background: url(../img/discount.png) center (center / cover) no-repeat;
+    }
+    &_item {
+        color: #fff;
+        background-color: #F37335;
+        width: 101px;
+        height: 28px;
+        border-radius: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 5px;
+        font-weight: 900;
+        font-size: 14px;
+    }
+    &_number {
+        color: #fff;
+        margin-top: 14px;
+        font-weight: 900;
+        font-size: 60px;
+    }
+    &_text {
+        color: #faf9f9;
+        line-height: 28px;
+        margin-top: 20px;
+        width: 400px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    &_free {
+        padding: 102px 0 101px 50px;
+        background: url(../img/free.png) center (center / cover) no-repeat;
+    }
+    &_title {
+        font-weight: 700;
+        font-size: 44px;
+        color: #fff;
+    }
+    &_descr {
+        color: #faf9f9;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 23px;
+        line-height: 25px;
+        width: 320px;
+    }
+    &_btn {
+        width: 170px;
+        height: 58px;
+        background-color: $main-color;
+        color: #1e2f40;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    padding: 111px 0 106px 0;
+    background-color: #1E2F40;
+    color: #fff;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: start
+    }
+    &_title {
+        font-weight: 800;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+    &_list {
+        list-style-type: none;
+    }
+    &_item {
+        margin-bottom: 9px;
+        line-height: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &_link {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 9px;
+    }
+    &_subtitle {
+        font-weight: 400;
+        font-size: 15px;
+        color: #DEDEDE;
+        margin-top: 23px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &_text {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    &_phone {
+        display: block;
+        color: $main-color;
+        text-decoration: none;
+        margin-top: 6px;
+        font-weight: 800;
+        font-size: 20px;
+    }
+}
